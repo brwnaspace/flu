@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'ridley-medium';
+    src: url('/assets/Ridley Grotesk Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ridley-light';
+    src: url('/assets/Ridley Grotesk Light.otf') format('truetype');
+}
+
+// cores
+$grena: #7B001F;
+$grena-hover: #560F20;
+$verde: #008000;
+$verde-hover: #004C33;
+$branco: #FFFFFF;
+
+// font
+$font-text: 'ridley-medium';
+$font-text-light: 'ridley-medium';
+
+
+.footer-container {
+    background: $verde;
+    color: $branco;
+    font-family: $font-text-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+        li {
+            padding: 10px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+
+                &:hover {
+                    border-bottom: 1px solid #ffffff;
+                    transition: 0.6s ease-in-out;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 5%;
+
+        ul {
+            li {
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+    }
+
+}
