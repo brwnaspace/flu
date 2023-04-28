@@ -1,17 +1,35 @@
-:root {
-    --grenarrr: #7B001F;
-    --verde: #008000;
-    --branco: #FFFFFF;
+@font-face {
+    font-family: 'ridley-medium';
+    src: url('/assets/Ridley Grotesk Medium.otf') format('truetype');
 }
+
+@font-face {
+    font-family: 'ridley-light';
+    src: url('/assets/Ridley Grotesk Light.otf') format('truetype');
+}
+
+// cores
+$grena: #7B001F;
+$grena-hover: #560F20;
+$verde: #008000;
+$verde-hover: #004C33;
+$branco: #FFFFFF;
+
+// font
+$font-text: 'ridley-medium';
+$font-text-light: 'ridley-medium';
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: #7B001F;
-    color: var(--branco);
+    background-color: $grena;
+    color: $branco;
     font-size: 16px;
+    font-family: $font-text;
+    box-shadow: 3px 1px 8px 3px rgba(0, 0, 0, 0.11);
 
     .navbar-nav {
         display: flex;
@@ -32,7 +50,7 @@
                 transition: background-color 0.3s ease;
 
                 &:hover {
-                    background-color: #555;
+                    background-color: $grena-hover;
                 }
             }
         }
