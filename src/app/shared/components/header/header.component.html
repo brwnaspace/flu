@@ -1,5 +1,5 @@
-<nav class="navbar">
-    <ul [ngClass]="{'navbar-nav': isCollapsed}">
+<nav class="navbar" [ngClass]="{'show-mobile': !isCollapsed}">
+    <ul class='navbar-nav'>
         <li class="nav-item">
             <a [routerLink]="['/home']" class="nav-link">Home</a>
         </li>
