@@ -1,0 +1,136 @@
+:root {
+    --grenarrr: #7B001F;
+    --verde: #008000;
+    --branco: #FFFFFF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #7B001F;
+    color: var(--branco);
+    font-size: 16px;
+
+    .navbar-nav {
+        display: flex;
+        height: 100%;
+
+        .nav-item {
+            height: 100%;
+            list-style: none;
+
+            .nav-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 20px;
+                height: 100%;
+                text-decoration: none;
+                color: #fff;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #555;
+                }
+            }
+        }
+    }
+
+    .navbar-social {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        margin-right: 20px;
+
+        li {
+            margin-left: 15px;
+            list-style: none;
+
+            .social-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                text-decoration: none;
+                color: #fff;
+                transition: opacity 0.3s ease;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+
+    // Adiciona o botão de toggle para o menu móvel
+    .navbar-toggler {
+        display: none;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        margin-right: 20px;
+        cursor: pointer;
+
+        // Remove o espaço entre o botão e as redes sociais quando a navbar é estreitada
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+
+    // Alterna a exibição do menu móvel quando o botão de toggle é clicado
+    &.show-mobile {
+        .navbar-nav {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            flex-direction: column;
+            align-items: stretch;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease;
+
+            .nav-item {
+                width: 100%;
+
+                .nav-link {
+                    padding: 15px 20px;
+                }
+            }
+        }
+
+        .navbar-social {
+            display: none;
+        }
+
+        .navbar-toggler {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
+
+    // Define as regras de responsividade para a navbar
+    @media screen and (max-width: 767px) {
+        .navbar-nav {
+            display: none;
+        }
+
+        .navbar-toggler {
+            display: block;
+        }
+
+        &.show-mobile {
+            .navbar-nav {
+                max-height: 1000px; // Define uma altura máxima para permitir a animação de abertura
+            }
+        }
+    }
+}

@@ -1,5 +1,25 @@
-<ul>
-    <li>Home</li>
-    <li>Login</li>
-    <li>Sair</li>
-</ul>
+<nav class="navbar">
+    <ul [ngClass]="{'navbar-nav': isCollapsed}">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Login</a>
+        </li>
+    </ul>
+    <ul class="navbar-social">
+        <li>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </li>
+    </ul>
+    <button type="button" class="navbar-toggler" (click)="toggleNavbar()"><i class="fas fa-bars"></i></button>
+</nav>
