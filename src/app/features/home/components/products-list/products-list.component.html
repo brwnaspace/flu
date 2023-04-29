@@ -1,1 +1,19 @@
-<p>products-list works!</p>
+<section>
+  <h1>CONHEÇA NOSSOS PLANOS!</h1>
+  <h3>Escolha o que mais se adequa a você:</h3>
+  
+  <div class="card-wrapper">
+    <div class="card" *ngFor="let item of products">
+      <div class="card-header">
+        {{item.name}}
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{item.description}}</p>
+      </div>
+  
+      <div class="price">
+        <p class="card-text">{{item.price | currency: 'R$'}}</p>
+      </div>
+    </div>
+  </div>
+</section>

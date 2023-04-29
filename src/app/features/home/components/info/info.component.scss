@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'ridley-medium';
+    src: url('/assets/Ridley Grotesk Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'varsity';
+    src: url('/assets/VarsityTeam-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ridley-light';
+    src: url('/assets/Ridley Grotesk Light.otf ') format('truetype');
+}
+
+// cores
+$grena: #7B001F;
+$grena-hover: #560F20;
+$verde: #008000;
+$verde-hover: #004C33;
+$branco: #FFFFFF;
+
+// font
+$font-text: 'ridley-medium';
+$font-text-light: 'ridley-medium';
+$font-title: 'varsity';
+
+section {
+    background-color: #ebeaea;
+
+    img {
+        width: 100%;
+        height: 100vh;
+    }
+
+    div {
+        position: absolute;
+        top: 90%;
+        left: 25%;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        .regular {
+            padding: 20px 70px;
+            background-color: $grena;
+            color: $branco;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: $font-text;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $grena-hover;
+                scale: 1.2;
+                transition: 0.4s ease-in-out;
+            }
+        }
+
+        .outline {
+            padding: 10px 50px;
+            border: 3px solid $grena;
+            background-color: transparent;
+            color: $grena;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: $font-text;
+            border-radius: 5px;
+
+            &:hover {
+                border: 3px solid $grena-hover;
+                color: $grena-hover;
+                scale: 1.2;
+                transition: 0.4s ease-in-out;
+            }
+        }
+    }
+}
