@@ -28,7 +28,7 @@ $font-title: 'varsity';
 section {
     padding: 10%;
     height: 100vh;
-    background-image: url(https://pbs.twimg.com/media/FXQl-6AXkAUhwNl?format=jpg&name=large);
+    background-image: url(https://i.pinimg.com/originals/65/33/20/6533206d21de26356583104ed98dc49f.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -101,8 +101,9 @@ section {
 
                 &:hover {
                     background-color: $verde-hover;
-                    border: none;
-                    transition: 0.5s ease-out;
+                    border-color: $verde-hover;
+                    transition: 0.3s ease-out;
+                    
                 }
             }
         }
