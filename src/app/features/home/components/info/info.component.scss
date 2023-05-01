@@ -26,55 +26,75 @@ $font-text-light: 'ridley-medium';
 $font-title: 'varsity';
 
 section {
-    background-color: #ebeaea;
+    padding: 10%;
+    height: 100vh;
+    background-image: url(https://pbs.twimg.com/media/EoaT98sXUAEa_-x?format=jpg&name=large);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    img {
-        width: 100%;
-        height: 100vh;
+    .title {
+        margin-top: 7%;
+
+
+        p {
+            color: $branco;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: $font-text;
+            margin-left: 20%;
+            width: 12%;
+            text-align: center;
+            padding: 5px;
+            border-bottom: 3px solid $branco;
+            border-top: 3px solid $branco;
+        }
+
+        h1 {
+            color: $branco;
+            font-family: $font-title;
+            font-size: 100px;
+        }
     }
 
-    div {
-        position: absolute;
-        top: 90%;
-        left: 25%;
-        z-index: 1;
+    .btns {
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 10px;
+        width: 100%;
+        margin-top: 5%;
 
-        .regular {
-            padding: 20px 70px;
-            background-color: $grena;
-            color: $branco;
-            border: none;
+
+        button {
+            font-size: 20px;
             cursor: pointer;
-            font-weight: bold;
             font-family: $font-text;
-            border-radius: 5px;
 
-            &:hover {
-                background-color: $grena-hover;
-                scale: 1.2;
-                transition: 0.4s ease-in-out;
+
+            &:first-child {
+                padding: 12px 45px;
+                background-color: $grena;
+                color: $branco;
+                border: none;
+
+                &:hover {
+                    background-color: $grena-hover;
+                    transition: 0.5s ease-in;
+                }
             }
-        }
 
-        .outline {
-            padding: 10px 50px;
-            border: 3px solid $grena;
-            background-color: transparent;
-            color: $grena;
-            cursor: pointer;
-            font-weight: bold;
-            font-family: $font-text;
-            border-radius: 5px;
+            &:last-child {
+                padding: 12px 20px;
+                border: 2px solid $branco;
+                background-color: transparent;
+                color: $branco;
 
-            &:hover {
-                border: 3px solid $grena-hover;
-                color: $grena-hover;
-                scale: 1.2;
-                transition: 0.4s ease-in-out;
+                &:hover {
+                    background-color: $verde-hover;
+                    border: none;
+                    transition: 0.5s ease-out;
+                }
             }
         }
     }
+
 }

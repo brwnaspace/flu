@@ -4,160 +4,188 @@
 }
 
 @font-face {
+    font-family: 'varsity';
+    src: url('/assets/VarsityTeam-Bold.otf') format('truetype');
+}
+
+@font-face {
     font-family: 'ridley-light';
-    src: url('/assets/Ridley Grotesk Light.otf') format('truetype');
+    src: url('/assets/Ridley Grotesk Light.otf ') format('truetype');
 }
 
 // cores
 $grena: #7B001F;
 $grena-hover: #560F20;
-$verde: #008000;
-$verde-hover: #004C33;
+$verde: #004C33;
+$verde-hover: #008000;
 $branco: #FFFFFF;
 
 // font
 $font-text: 'ridley-medium';
 $font-text-light: 'ridley-medium';
+$font-title: 'varsity';
 
+.container {
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    background-color: $grena;
-    color: $branco;
-    font-size: 16px;
-    font-family: $font-text;
-    box-shadow: 3px 1px 8px 3px rgba(0, 0, 0, 0.536);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 
-    .navbar-nav {
+    .navbar {
+        width: 100%;
         display: flex;
-        height: 100%;
-
-        .nav-item {
-            height: 100%;
-            list-style: none;
-
-            .nav-link {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0 20px;
-                height: 100%;
-                text-decoration: none;
-                color: #fff;
-                transition: background-color 0.3s ease;
-
-                &:hover {
-                    background-color: $grena-hover;
-                }
-            }
-        }
-    }
-
-    .navbar-social {
-        display: flex;
-        height: 100%;
+        justify-content: space-between;
         align-items: center;
-        margin-right: 20px;
+        height: 80px;
+        background-color: $verde;
+        color: $branco;
+        font-size: 16px;
+        font-family: $font-text;
 
-        li {
-            margin-left: 15px;
-            list-style: none;
 
-            .social-link {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-                text-decoration: none;
-                color: #fff;
-                transition: opacity 0.3s ease;
-
-                &:hover {
-                    opacity: 0.7;
-                }
-            }
-
-            i {
-                font-size: 20px;
-            }
-        }
-    }
-
-    // Adiciona o botão de toggle para o menu móvel
-    .navbar-toggler {
-        display: none;
-        background-color: transparent;
-        border: none;
-        color: #fff;
-        font-size: 24px;
-        margin-right: 20px;
-        cursor: pointer;
-
-        // Remove o espaço entre o botão e as redes sociais quando a navbar é estreitada
-        &:not(:last-child) {
-            margin-right: 0;
-        }
-    }
-
-    // Alterna a exibição do menu móvel quando o botão de toggle é clicado
-    &.show-mobile {
         .navbar-nav {
-            
-            max-width: 100%;
-            height: 0;
-            visibility: hidden;
-            position: absolute;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            top: 80px;
-            right: 0;
-            opacity: 0.5;
-            transition: all 0.5s ease;
-            background-color: $grena;
-            right: 0;
-            width: 50%;
-            height: 110vh;
-            visibility: visible;
-            opacity: 1;
-            transition: all 1s ease-in-out;
-            z-index: 10000;
-            margin: 0 !important;
+            height: 100%;
 
             .nav-item {
-                width: 100%;
-                height: 8rem;
+                height: 100%;
+                list-style: none;
 
                 .nav-link {
-                    padding: 15px 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 20px;
+                    height: 100%;
+                    text-decoration: none;
+                    color: #fff;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        padding-bottom: 0;
+                        border-bottom: 1px solid $branco;
+                    }
                 }
             }
         }
 
+        .navbar-social {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            margin-right: 20px;
+
+            li {
+                margin-left: 15px;
+                list-style: none;
+
+                .social-link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    text-decoration: none;
+                    color: #fff;
+                    transition: opacity 0.3s ease;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        // Adiciona o botão de toggle para o menu móvel
         .navbar-toggler {
-            position: absolute;
-            right: 0;
+            display: none;
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            margin-right: 20px;
+            cursor: pointer;
+
+            // Remove o espaço entre o botão e as redes sociais quando a navbar é estreitada
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+
+        // Alterna a exibição do menu móvel quando o botão de toggle é clicado
+        &.show-mobile {
+            .navbar-nav {
+
+                max-width: 100%;
+                visibility: hidden;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-end;
+                top: 80px;
+                transition: all 0.5s ease;
+                background-color: $verde;
+                right: 0;
+                width: 50%;
+                height: 110vh;
+                visibility: visible;
+                opacity: 1;
+                transition: all 1s ease-in-out;
+                margin: 0 !important;
+
+                .nav-item {
+                    width: 100%;
+                    height: 8rem;
+                    margin-top: 20%;
+
+                    .nav-link {
+                        padding: 15px 20px;
+                    }
+                }
+            }
+
+            .navbar-toggler {
+                position: absolute;
+                right: 0;
+            }
+        }
+
+
+
+        // Define as regras de responsividade para a navbar
+        @media screen and (max-width: 767px) {
+            .navbar-nav {
+                display: none;
+            }
+
+            .navbar-toggler {
+                display: block;
+            }
+
+            &.show-mobile {
+                .navbar-nav {
+                    max-height: 1000px; // Define uma altura máxima para permitir a animação de abertura
+                }
+            }
         }
     }
 
-    // Define as regras de responsividade para a navbar
-    @media screen and (max-width: 767px) {
-        .navbar-nav {
-            display: none;
-        }
+    .white-container {
+        width: 100%;
+        text-align: center;
+        font-family: $font-title;
+        background-color: $branco;
 
-        .navbar-toggler {
-            display: block;
-        }
-
-        &.show-mobile {
-            .navbar-nav {
-                max-height: 1000px; // Define uma altura máxima para permitir a animação de abertura
-            }
+        span {
+            background-color: $grena;
+            padding: 20px;
+            font-size: 30px;
+            color: $branco;
+            border: 4px solid $branco;
         }
     }
 }

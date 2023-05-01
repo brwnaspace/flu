@@ -21,14 +21,14 @@ $font-text-light: 'ridley-medium';
 
 
 .footer-container {
-    background: $verde;
-    color: $branco;
+    background: $grena;
     font-family: $font-text-light;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 150px;
+    color: $branco;
 
     ul {
         display: flex;

@@ -1,25 +1,31 @@
-<nav class="navbar" [ngClass]="{'show-mobile': !isCollapsed}">
-    <ul class='navbar-nav'>
-        <li class="nav-item">
-            <a [routerLink]="['/home']" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-            <a [routerLink]="['/sobre']" class="nav-link">Sobre</a>
-        </li>
-        <li class="nav-item">
-            <a [routerLink]="['/login']" class="nav-link">Login</a>
-        </li>
-    </ul>
-    <ul class="navbar-social">
-        <li>
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-        </li>
-    </ul>
-    <button type="button" class="navbar-toggler" (click)="toggleNavbar()"><i class="fas fa-bars"></i></button>
-</nav>
+<section class="container">
+    <nav class="navbar" [ngClass]="{'show-mobile': !isCollapsed}">
+        <ul class='navbar-nav'>
+            <li class="nav-item">
+                <a [routerLink]="['/home']" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/sobre']" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['/login']" class="nav-link">Login</a>
+            </li>
+        </ul>
+        <ul class="navbar-social">
+            <li>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+        <button type="button" class="navbar-toggler" (click)="toggleNavbar()"><i class="fas fa-bars"></i></button>
+    </nav>
+    
+    <div class="white-container">
+        <h2>JÁ SOMOS <span>63.738</span> SÓCIOS</h2>
+    </div>
+</section>
