@@ -28,12 +28,23 @@ $font-title: 'varsity';
 section {
     padding: 10%;
     height: 100vh;
-    background-image: url(https://pbs.twimg.com/media/EoaT98sXUAEa_-x?format=jpg&name=large);
+    background-image: url(https://pbs.twimg.com/media/FXQl-6AXkAUhwNl?format=jpg&name=large);
     background-repeat: no-repeat;
     background-size: cover;
 
+    .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  #7b001f4f;
+    }
+
     .title {
         margin-top: 7%;
+        z-index: 1;
+        position: relative;
 
 
         p {
@@ -43,7 +54,6 @@ section {
             font-family: $font-text;
             margin-left: 20%;
             width: 12%;
-            text-align: center;
             padding: 5px;
             border-bottom: 3px solid $branco;
             border-top: 3px solid $branco;
@@ -61,8 +71,9 @@ section {
         flex-direction: row;
         gap: 10px;
         width: 100%;
-        margin-top: 5%;
-
+        margin-top: 1%;
+        z-index: 1;
+        position: relative;
 
         button {
             font-size: 20px;
