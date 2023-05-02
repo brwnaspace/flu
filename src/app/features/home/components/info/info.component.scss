@@ -38,7 +38,7 @@ section {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color:  #7b001f4f;
+        background-color: #7b001f4f;
     }
 
     .title {
@@ -53,6 +53,7 @@ section {
             font-size: 18px;
             font-family: $font-text;
             margin-left: 20%;
+            text-align: center;
             width: 12%;
             padding: 5px;
             border-bottom: 3px solid $branco;
@@ -103,10 +104,50 @@ section {
                     background-color: $verde-hover;
                     border-color: $verde-hover;
                     transition: 0.3s ease-out;
-                    
+
                 }
             }
         }
+    }
+
+    @media screen and (max-width: 767px) {
+
+            .title {
+                padding-top: 50%; 
+
+                p { 
+                    font-size: 18px;
+                    width: 50%;
+                    margin-left: 90px;
+                    font-weight: bolder;
+                    border-width: 4px;
+                }
+
+                h1 {
+                    color: $branco;
+                    font-family: $font-title;
+                    font-size: 63px;
+                }
+            }
+
+            .btns {
+
+                padding-top: 10%;
+
+                button {
+                font-size: 16px;
+    
+                &:first-child {
+                    padding: 8px 53px;
+
+                }
+    
+                &:last-child {
+                    padding: 8px 30px;
+                }
+            }
+        }
+        
     }
 
 }

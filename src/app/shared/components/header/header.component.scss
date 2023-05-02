@@ -156,7 +156,6 @@ $font-title: 'varsity';
 
 
 
-        // Define as regras de responsividade para a navbar
         @media screen and (max-width: 767px) {
             .navbar-nav {
                 display: none;
@@ -168,7 +167,7 @@ $font-title: 'varsity';
 
             &.show-mobile {
                 .navbar-nav {
-                    max-height: 1000px; // Define uma altura máxima para permitir a animação de abertura
+                    max-height: 1000px; 
                 }
             }
         }
