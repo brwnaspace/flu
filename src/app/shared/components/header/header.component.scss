@@ -62,8 +62,7 @@ $font-title: 'varsity';
                     transition: background-color 0.3s ease;
 
                     &:hover {
-                        padding-bottom: 0;
-                        border-bottom: 1px solid $branco;
+                        border-bottom: 3px solid $branco;
                     }
                 }
             }
