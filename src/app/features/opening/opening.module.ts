@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OpeningComponent } from './pages/opening/opening.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -9,7 +10,8 @@ import { OpeningComponent } from './pages/opening/opening.component';
     OpeningComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ], 
   exports: [
     OpeningComponent

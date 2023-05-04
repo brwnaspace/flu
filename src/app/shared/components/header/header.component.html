@@ -1,11 +1,18 @@
 <section class="container">
     <nav class="navbar" [ngClass]="{'show-mobile': !isCollapsed}">
         <ul class='navbar-nav'>
-            <li class="nav-item">
-                <a [routerLink]="['/home']" class="nav-link">Home</a>
+            <li class="nav-item" *ngIf="!user">
+                <a [routerLink]="['/']" class="nav-link img" >
+                    <img src="https://fluminensefc.s3.amazonaws.com/prod/assets/images/logo-sociofutebol.png">
+                </a> 
             </li>
             <li class="nav-item">
-                <a [routerLink]="['/sobre']" class="nav-link">Sobre</a>
+                <a [routerLink]="['']" class="nav-link" *ngIf="user">Home</a> 
+                <!-- colocar o router na pag home/opening pra logados q ainda irei criar -->
+            </li> 
+            <li class="nav-item" id="cadastro" *ngIf="!user">
+                <a [routerLink]="['/sobre']" class="nav-link" >Cadastro</a> 
+                <hr>
             </li>
             <li class="nav-item">
                 <a class="nav-link" *ngIf="user">Produtos</a>

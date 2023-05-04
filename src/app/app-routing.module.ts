@@ -7,8 +7,8 @@ import { AuthGuard } from './shared/guards/auth.guard';
 import { OpeningComponent } from './features/opening/pages/opening/opening.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent}, // colocar o auth na pag q eu quero que so veja
+  // {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: '', component: HomeComponent}, 
   {path: 'opening', component: OpeningComponent, canActivate: [AuthGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'products-details/:id', component: DetailsPageComponent}

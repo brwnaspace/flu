@@ -36,12 +36,24 @@ $font-title: 'varsity';
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 80px;
+        height: 110px;
         background-color: $verde;
         color: $branco;
         font-size: 16px;
         font-family: $font-text;
 
+        #cadastro {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            hr {
+                padding: 0.5px;
+                background-color: $branco;
+                border: none;
+                height: 30%;
+            }
+        }
 
         .navbar-nav {
             display: flex;
@@ -50,6 +62,7 @@ $font-title: 'varsity';
             .nav-item {
                 height: 100%;
                 list-style: none;
+
 
                 .nav-link {
                     display: flex;
@@ -60,9 +73,28 @@ $font-title: 'varsity';
                     text-decoration: none;
                     color: #fff;
                     transition: background-color 0.3s ease;
+                    cursor: pointer;
 
                     &:hover {
-                        border-bottom: 3px solid $branco;
+                        font-size: 17px;
+                        transition: 0.3s ease-in-out;
+                    }
+
+
+                }
+
+                .img {
+
+                    padding-right: 50px;
+                    margin-bottom: 20px;
+
+                    &:hover {
+                        border-bottom: none !important;
+                    }
+
+                    img {
+                        width: 170px;
+                        max-width: 300px;
                     }
                 }
             }
@@ -166,7 +198,7 @@ $font-title: 'varsity';
 
             &.show-mobile {
                 .navbar-nav {
-                    max-height: 1000px; 
+                    max-height: 1000px;
                 }
             }
         }
