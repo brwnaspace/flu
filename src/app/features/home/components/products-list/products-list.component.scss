@@ -72,13 +72,13 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1px;
+    gap: 15px;
 
     .card {
       border: 1px solid #dadada;
       border-radius: 3px;
       box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-      margin: 10px;
+      
       width: 300px;
       max-width: 300px;
       overflow: hidden;
