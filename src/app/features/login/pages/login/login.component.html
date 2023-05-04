@@ -1,3 +1,17 @@
 <app-header/>
-<p>login works!</p>
+<div class="login-container">
+    <p>login works!</p>
+    
+    <form action="" class="login-form">
+
+        <input type="email" [(ngModel)]="email" placeholder="Digite seu e-mail" name="email" required>
+
+        <input type="password" [(ngModel)]="password" placeholder="Digite sua senha" name="password" required>
+
+        <p class="error" *ngIf="error">Usuário/senha inválidos, tente novamente</p>
+    </form>
+    <button type="button" (click)="authenticate()">Entrar</button>
+</div>
+
+
 <app-footer/>
