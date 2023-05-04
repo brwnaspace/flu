@@ -72,14 +72,13 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 4px;
+    gap: 15px;
 
     .card {
       border: 1px solid #dadada;
       border-radius: 3px;
       box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-      
-      width: 300px;
+      width: 280px;
       max-width: 300px;
       overflow: hidden;
       font-family: $font-text;
@@ -91,7 +90,7 @@ section {
         font-weight: bold;
         padding: 10px;
         font-family: 'varsity';
-        font-size: 35px;
+        font-size: 30px;
         text-align: center;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
       }
@@ -104,7 +103,7 @@ section {
       }
 
       .card-text {
-        font-size: 16px;
+        font-size: 15px;
         margin: 10px 0;
       }
 
