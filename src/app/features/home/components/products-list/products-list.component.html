@@ -14,10 +14,14 @@
       </div>
   
       <div class="price">
+        <button (click)="detalhesProduto(item.id)">Assinar</button>
         <p class="card-text">{{item.price | currency: 'R$'}}</p>
       </div>
 
-      <button (click)="detalhesProduto(item.id)">teste</button>
+      <!-- <button (click)="detalhesProduto(item.id)">Saiba mais</button> -->
     </div>
   </div>
 </section>
+
+
+<!-- PRETENDO TIRAR O BOTÃO E COLOCAR UM <A> NO PRICE, E O <A> LEVAR A PAGE DE CADASTRO -->
