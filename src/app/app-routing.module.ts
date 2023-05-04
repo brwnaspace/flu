@@ -2,12 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './features/home/pages/home/home.component';
 import { LoginComponent } from './features/login/pages/login/login.component';
+import { DetailsPageComponent } from './features/home/pages/details-page/details-page.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
- // {path: 'products', component: ProductsComponent},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'products-details/:id', component: DetailsPageComponent}
 ];
 
 @NgModule({

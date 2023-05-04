@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'ridley-medium';
+    src: url('/assets/Ridley Grotesk Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'varsity';
+    src: url('/assets/VarsityTeam-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ridley-light';
+    src: url('/assets/Ridley Grotesk Light.otf ') format('truetype');
+}
+
+// cores
+$grena: #7B001F;
+$grena-hover: #560F20;
+$verde: #008000;
+$verde-hover: #004C33;
+$branco: #FFFFFF;
+
+// font
+$font-text: 'ridley-medium';
+$font-text-light: 'ridley-medium';
+$font-title: 'varsity';
+
+
+.card-wrapper {
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+
+    .card {
+        border: 1px solid #dadada;
+        border-radius: 3px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.168);
+        margin: 10px;
+        max-width: 300px;
+        overflow: hidden;
+        font-family: $font-text;
+
+        .card-header {
+            background-color: $verde-hover;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            font-family: 'varsity';
+            font-size: 35px;
+            text-align: center;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+        }
+
+        .card-body {
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #dadada;
+            height: 170px;
+        }
+
+        .card-text {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .price {
+            display: flex;
+            justify-content: flex-end;
+            height: 50px;
+            background-color: #ebeaea;
+
+            .card-text {
+                padding: 0px 10px;
+                font-family: $font-title;
+                font-size: 25px;
+            }
+
+        }
+
+
+    }
+
+}
