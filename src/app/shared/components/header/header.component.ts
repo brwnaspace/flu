@@ -28,7 +28,7 @@ export class HeaderComponent {
   
   exit() {
     sessionStorage.clear()
-    this.router.navigateByUrl('')
+    this.router.navigateByUrl('login')
   }
 
 }

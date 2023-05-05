@@ -1,24 +1,212 @@
-.login-container {
-    padding: 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+// .login-container {
+//     padding: 30%;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//     align-items: center;
 
-    form {
+//     form {
 
-        width: 100%;
+//         width: 100%;
 
-        input {
-            width: 100%;
-            padding: 5px;
-            margin: 5px;
-        }
+//         input {
+//             width: 100%;
+//             padding: 5px;
+//             margin: 5px;
+//         }
+//     }
+
+//     button {
+//         cursor: pointer;
+//         padding: 5px 8px;
+//         width: 100%;
+//     }
+// }
+
+@-webkit-keyframes Animationgrad {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes Animationgrad {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes Animationgrad {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@font-face {
+  font-family: 'ridley-medium';
+  src: url('/assets/Ridley Grotesk Medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'varsity';
+  src: url('/assets/VarsityTeam-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ridley-light';
+  src: url('/assets/Ridley Grotesk Light.otf ') format('truetype');
+}
+
+// cores
+$grena: #7B001F;
+$grena-hover: #560F20;
+$verde: #004C33;
+$verde-hover: #008000;
+$branco: #FFFFFF;
+
+// font
+$font-text: 'ridley-medium';
+$font-text-light: 'ridley-medium';
+$font-title: 'varsity';
+
+.wrapper {
+  padding: 14%;
+  font-family: $font-text;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  height: 110vh;
+  background-image: url(https://pbs.twimg.com/media/EoaT98sXUAEa_-x?format=jpg&name=large);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    background-color: #7b001f4f;
+  }
+
+  .login-form {
+    width: 50%;
+    position: relative;
+    padding: 10%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.473);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    box-shadow: 0px 11px 15px -3px rgba(0, 0, 0, 0.415);
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      margin-bottom: 30px;
+      text-align: center;
+      font-family: $font-title;
+      letter-spacing: 8px;
+      color: $branco;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
     }
 
     button {
-        cursor: pointer;
-        padding: 5px 8px;
-        width: 100%;
+      padding: 0.6em 1.2em;
+      font-family: $font-text;
+      font-size: 20px;
+      cursor: pointer;
+      font-family: $font-text;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+      cursor: pointer;
+      width: 100%;
+      border: 2px solid $branco;
+      background-color: transparent;
+      color: $branco;
+
+      &:hover {
+        background-color: $verde;
+        border-color: $verde;
+        transition: 0.3s ease-out;
+      }
     }
+
+    label {
+      display: block;
+    }
+
+    .errorMessage {
+      color: $branco;
+      display: block;
+      background: $grena-hover;
+      font-weight: bold;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      border-radius: 2px;
+    }
+
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+
+  input {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+
+    &:focus {
+      border-color: #646cff;
+    }
+  }
+
+  .register {
+    margin: 15px 0 0 0;
+    padding: 8px 0 0 0;
+    text-align: center;
+    color: $branco;
+    border-top: 1px solid #d0d0d0;
+    
+    a {
+      text-decoration: none;
+      color: $grena-hover;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
 }
