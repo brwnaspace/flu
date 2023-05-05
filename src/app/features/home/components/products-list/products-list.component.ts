@@ -18,7 +18,6 @@ export class ProductsListComponent {
   products: Array<Plano> = this.productService.getProducts()
 
   detalhesProduto(idProduto: number) {
-
     this.router.navigateByUrl(`products-details/${idProduto}`)
   }
 }

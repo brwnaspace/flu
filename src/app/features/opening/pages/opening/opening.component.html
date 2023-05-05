@@ -1,3 +1,20 @@
 <app-header/>
-<p>opening works!</p>
+
+<section class="open-container">
+
+    <div class="greetings">
+        <h1>Hello, Bruna</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lacus augue, tristique et velit sollicitudin, semper sollicitudin erat. </p>
+        <button>Saiba mais</button>
+    </div>
+    <div class="informations">
+        <div class="info-itens" *ngFor="let info of information">
+            <img src="{{info.img}}">
+            <h1>{{info.title}}</h1>
+            <p>{{info.text}}</p>
+            <div class="btn"><button>Veja agora</button></div>
+        </div>
+    </div>
+</section>
+
 <app-footer/>

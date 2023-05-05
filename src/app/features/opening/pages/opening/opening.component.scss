@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'ridley-medium';
+    src: url('/assets/Ridley Grotesk Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'varsity';
+    src: url('/assets/VarsityTeam-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ridley-light';
+    src: url('/assets/Ridley Grotesk Light.otf ') format('truetype');
+}
+
+// cores
+$grena: #7B001F;
+$grena-hover: #560F20;
+$verde: #008000;
+$verde-hover: #004C33;
+$branco: #FFFFFF;
+
+// font
+$font-text: 'ridley-medium';
+$font-text-light: 'ridley-medium';
+$font-title: 'varsity';
+
+
+.open-container {
+    padding: 8% 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: $branco;
+    font-family: $font-text;
+    justify-content: flex-start;
+
+    .greetings {
+
+        display: flex;
+        flex-direction: column;
+        background-color: #ccc;
+        padding: 5em 3.125rem;
+
+        h1,
+        p,
+        button {
+            padding: 8px;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-align: left;
+        }
+
+        p {
+            width: 100%;
+            font-size: 1em;
+            text-align: left;
+        }
+
+        button {
+            font-size: 20px;
+            cursor: pointer;
+            font-family: $font-text;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+            padding: 12px 20px;
+            border: 2px solid $branco;
+            background-color: transparent;
+            color: $branco;
+            width: 20%;
+            margin-top: 1.25rem;
+
+            &:hover {
+                background-color: $verde-hover;
+                border-color: $verde-hover;
+                transition: 0.3s ease-out;
+            }
+        }
+    }
+
+    .informations {
+        display: flex;
+        flex-direction: row;
+        gap: 1.6rem;
+        padding: 0 1.875rem;
+
+        .info-itens {
+            padding: 3.125rem 0.625rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 17%;
+            }
+
+            p {
+                font-size: 0.8em;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            button {
+                font-size: 0.875rem;
+                cursor: pointer;
+                font-family: $font-text;
+                text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+                padding: 8px 20px;
+                background-color: $grena;
+                color: $branco;
+                border: none;
+
+                &:hover {
+                    background-color: $grena-hover;
+                    transition: 0.5s ease-in;
+                }
+            }
+        }
+    }
+}
