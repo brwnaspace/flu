@@ -92,6 +92,7 @@ $font-text: 'ridley-medium';
 $font-text-light: 'ridley-medium';
 $font-title: 'varsity';
 
+
 .wrapper {
   padding: 14%;
   font-family: $font-text;
@@ -202,7 +203,8 @@ $font-title: 'varsity';
       width: 100%;
 
       &:focus {
-        border-color: #646cff;
+        outline: none;
+        border: 2.2px solid $grena-hover;
       }
     }
 
