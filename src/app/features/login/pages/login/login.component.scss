@@ -115,98 +115,115 @@ $font-title: 'varsity';
   }
 
   .login-form {
-    width: 50%;
-    position: relative;
-    padding: 10%;
     margin: auto;
     background: rgba(255, 255, 255, 0.473);
     backdrop-filter: blur(6.5px);
     -webkit-backdrop-filter: blur(6.5px);
     box-shadow: 0px 11px 15px -3px rgba(0, 0, 0, 0.415);
-
-    h1 {
-      font-size: 2.5em;
-      margin: 0;
-      margin-bottom: 30px;
-      text-align: center;
-      font-family: $font-title;
-      letter-spacing: 8px;
-      color: $branco;
-      text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
-    }
-
-    button {
-      padding: 0.6em 1.2em;
-      font-family: $font-text;
-      font-size: 20px;
-      cursor: pointer;
-      font-family: $font-text;
-      text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
-      cursor: pointer;
-      width: 100%;
-      border: 2px solid $branco;
-      background-color: transparent;
-      color: $branco;
-
-      &:hover {
-        background-color: $verde;
-        border-color: $verde;
-        transition: 0.3s ease-out;
-      }
-    }
-
-    label {
-      display: block;
-    }
-
-    .errorMessage {
-      color: $branco;
-      display: block;
-      background: $grena-hover;
-      font-weight: bold;
-      font-size: 0.8em;
-      text-transform: uppercase;
-      margin-bottom: 15px;
-      padding: 10px 15px;
-      border-radius: 2px;
-    }
-
-  }
-
-  .row {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    align-items: center;
-  }
+    flex-direction: row;
 
-  input {
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    padding: 10px;
-    width: 100%;
-
-    &:focus {
-      border-color: #646cff;
-    }
-  }
-
-  .register {
-    margin: 15px 0 0 0;
-    padding: 8px 0 0 0;
-    text-align: center;
-    color: $branco;
-    border-top: 1px solid #d0d0d0;
-    
-    a {
-      text-decoration: none;
-      color: $grena-hover;
-      cursor: pointer;
-
-      &:hover {
-        text-decoration: underline;
-        transition: 0.5s ease-in-out;
+    .login-img {
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
+
+    .login {
+      width: 50%;
+      position: relative;
+      padding: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 2.8em;
+        margin: 0;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: $font-title;
+        letter-spacing: 8px;
+        color: $branco;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+      }
+
+      button {
+        padding: 0.6em 1.2em;
+        font-family: $font-text;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: $font-text;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+        cursor: pointer;
+        width: 100%;
+        border: 2px solid $branco;
+        background-color: transparent;
+        color: $branco;
+
+        &:hover {
+          background-color: $verde;
+          border-color: $verde;
+          transition: 0.3s ease-out;
+        }
+      }
+
+      label {
+        display: block;
+      }
+
+      .errorMessage {
+        color: $branco;
+        display: block;
+        background: $grena-hover;
+        font-weight: bold;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        padding: 10px 15px;
+        border-radius: 2px;
+      }
+
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      align-items: center;
+    }
+
+    input {
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      padding: 10px;
+      width: 100%;
+
+      &:focus {
+        border-color: #646cff;
+      }
+    }
+
+    .register {
+      margin: 15px 0 0 0;
+      padding: 8px 0 0 0;
+      text-align: center;
+      color: $branco;
+      border-top: 1px solid #d0d0d0;
+
+      a {
+        text-decoration: none;
+        color: $grena-hover;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+
   }
 }

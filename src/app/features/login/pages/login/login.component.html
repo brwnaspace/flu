@@ -3,20 +3,25 @@
 <div class='wrapper'>
     <div class="mask"></div>
     <div class='login-form'>
-        <h1>LOGIN</h1>
-        <p class="errorMessage" *ngIf="error">Usuário/senha inválidos, tente novamente</p>
-        <div class='row'>
-            <input type="email" [(ngModel)]="email" placeholder="Digite seu e-mail" name="email" required>
-        </div>
-        <div class='row'>
-            <input type="password" [(ngModel)]="password" placeholder="Digite sua senha" name="password" required>
-        </div>
-        <div class='button'>
-            <button id="login" type="button" (click)="authenticate()">Entrar</button>
+        <div class="login-img">
+            <img src="https://www.netflu.com.br/wp-content/uploads/2020/09/Eg2ouIGXkAMvdDX.jpg">
         </div>
 
-        <div class="register">
-            <p>Ainda não é sócio? <a [href]="">Cadastre-se já!</a></p>
+        <div class="login">
+            <h1>LOGIN</h1>
+            <p class="errorMessage" *ngIf="error">Usuário/senha inválidos, tente novamente</p>
+            <div class='row'>
+                <input type="email" [(ngModel)]="email" placeholder="Digite seu e-mail" name="email" required>
+            </div>
+            <div class='row'>
+                <input type="password" [(ngModel)]="password" placeholder="Digite sua senha" name="password" required>
+            </div>
+            <div class='button'>
+                <button id="login" type="button" (click)="authenticate()">Entrar</button>
+            </div>
+            <div class="register">
+                <p>Ainda não é sócio? <a [href]="">Cadastre-se já!</a></p>
+            </div>
         </div>
     </div>
 </div>
