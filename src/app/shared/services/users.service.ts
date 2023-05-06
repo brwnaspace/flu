@@ -30,4 +30,8 @@ export class UsersService {
   getUserByEmailAndPassword(email: string, password: string) {
     return this.users.find((user) => user.email === email && user.password === password)
   }
+
+  getById(id: number) {
+    return this.users.find((user) => user.id === id)
+  }
 }
