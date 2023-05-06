@@ -19,5 +19,9 @@ export class ProductsListComponent {
 
   detalhesProduto(idProduto: number) {
     this.router.navigateByUrl(`products-details/${idProduto}`)
+  } // entra numa rota especificada pelo id do produto
+
+  subscribe() {
+    this.router.navigateByUrl('login')
   }
 }

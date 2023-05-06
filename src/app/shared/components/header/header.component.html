@@ -15,7 +15,10 @@
                 <hr>
             </li>
             <li class="nav-item">
-                <a class="nav-link" *ngIf="user">Produtos</a>
+                <a class="nav-link" *ngIf="user">Ingressos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" *ngIf="user">Minha conta</a>
             </li>
             <li class="nav-item">
                 <a [routerLink]="['/login']" class="nav-link" *ngIf="!user">Login</a>
