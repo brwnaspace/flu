@@ -7,7 +7,7 @@
                 </a> 
             </li>
             <li class="nav-item">
-                <a [routerLink]="['opening']" class="nav-link" *ngIf="user">Home</a> 
+                <a [routerLink]="['/opening']" class="nav-link" *ngIf="user">Home</a> 
                 <!-- colocar o router na pag home/opening pra logados q ainda irei criar -->
             </li> 
             <li class="nav-item" id="cadastro" *ngIf="!user">
@@ -15,7 +15,7 @@
                 <hr>
             </li>
             <li class="nav-item">
-                <a class="nav-link" *ngIf="user">Ingressos</a>
+                <a [routerLink]="['/ticket']" class="nav-link" *ngIf="user">Ingressos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" *ngIf="user">Minha conta</a>

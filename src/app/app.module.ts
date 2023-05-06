@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './features/home/home.module';
 import { LoginModule } from './features/login/login.module';
 import { OpeningModule } from './features/opening/opening.module';
+import { TicketsModule } from './features/tickets/tickets.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OpeningModule } from './features/opening/opening.module';
     AppRoutingModule,
     HomeModule,
     LoginModule,
-    OpeningModule
+    OpeningModule,
+    TicketsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

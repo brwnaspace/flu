@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'ridley-medium';
+    src: url('/assets/Ridley Grotesk Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'varsity';
+    src: url('/assets/VarsityTeam-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ridley-light';
+    src: url('/assets/Ridley Grotesk Light.otf ') format('truetype');
+}
+
+// cores
+$grena: #7B001F;
+$grena-hover: #560F20;
+$verde: #008000;
+$verde-hover: #004C33;
+$branco: #FFFFFF;
+
+// font
+$font-text: 'ridley-medium';
+$font-text-light: 'ridley-medium';
+$font-title: 'varsity';
+
+section {
+    padding: 14% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    font-family: $font-text-light;
+    background-color: #f1f1f1;
+
+    .informations {
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+
+
+        .info-itens {
+
+            &:first-child {
+
+                width: 120%;
+
+                img {
+                    width: 100%;
+                    height: 70%;
+                }
+            }
+
+            &:last-child {
+                margin-top: 90px;
+                width: 80%;
+
+                h1 {
+                    font-size: 2.5em;
+                    padding: 0 0 20px 0;
+                    text-align: left;
+                }
+
+                p {
+                    font-size: 0.8em;
+                    padding: 0 0 30px 0;
+                }
+
+                button {
+                    font-size: 0.875rem;
+                    cursor: pointer;
+                    font-family: $font-text;
+                    text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+                    padding: 10px 30px;
+                    background-color: $grena;
+                    color: $branco;
+                    border: none;
+
+                    &:hover {
+                        background-color: $grena-hover;
+                        transition: 0.5s ease-in;
+                    }
+                }
+            }
+        }
+    }
+
+    .middle {
+        margin-top: -150px;
+        padding: 20px;
+        background-color: #d0d0d0;
+        text-align: center;
+    }
+
+
+    // not ready
+    .cards-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            border: 1px solid red;
+            background-color: transparent;
+            padding: 20px;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        padding: 10px;
+    }
+}
