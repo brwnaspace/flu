@@ -3,26 +3,38 @@
 <section>
     <div class="informations">
         <div class="info-itens">
-            <img src="https://s3.amazonaws.com/assets-fluminense/uploads%2F1681138378442-52806051610_1da7567bb1_k.jpg" alt="">
+            <img src="https://pbs.twimg.com/profile_banners/34082314/1677271696/1500x500" alt="">
         </div>
         <div class="info-itens">
-            <h1>Business Name or Tagline</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut tincidunt orci, non pharetra quam. Nunc quis rhoncus nisl. Aenean ac metus libero. Vivamus faucibus iaculis tempor. In sed eros metus. Ut ut rhoncus justo, eget egestas diam. Phasellus sit amet faucibus enim. Nunc viverra velit at nisl tristique vulputate. Praesent lobortis posuere quam, ut tempus eros pretium eu.</p>
-            <button>Saiba mais</button>
+            <h1>Vamos lutar <br> POR MAIS ESSA TAÇA</h1>
+            <p>Não perca mais tempo e garanta agora mesmo seus ingressos para os próximos jogos do Fluminense e venha fazer parte da história do clube. Acesse o campo abaixo, escolha o setor que mais combina com você e venha viver a emoção de ser tricolor!</p>
+            <button>INGRESSOS</button>
         </div>
     </div>
 
     <div class="middle">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Adquira seus ingressos com agilidade, praticidade e segurança.</p>
     </div>
 
     <h1>INGRESSOS</h1>
 
     <div class="cards-wrapper">
-        <div class="card">
+        <div class="card" *ngFor="let ticket of tickets">
             <div class="texts">
-                <h3>Card</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut tincidunt orci, non pharetra quam. Nunc quis rhoncus nisl. Aenean ac metus libero. Vivamus faucibus iaculis tempor. In sed eros metus.</p>
+                <h3>{{ticket.campeonato}}</h3>
+                <h4>{{ticket.estadio}}</h4>
+                <p>{{ticket.dia}}</p>
+            </div>
+            <div class="card-body">
+                <div class="clubes">
+                    <h2>{{ticket.clubeUm}}</h2>
+                    <img src="{{ticket.imgUm}}">
+                </div>
+                <p>X</p>
+                <div class="clubes">
+                    <img src="{{ticket.imgDois}}">
+                    <h2>{{ticket.clubeDois}}</h2> 
+                </div>
             </div>
             <div class="card-footer">
                 <button>Comprar</button>
