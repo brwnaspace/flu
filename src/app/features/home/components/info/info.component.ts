@@ -12,7 +12,7 @@ export class InfoComponent {
   constructor(private router: Router){}
 
   register() {
-    this.router.navigateByUrl('login') // colocar a rota cad quando tiver
+    this.router.navigateByUrl('register') // colocar a rota cad quando tiver
   }
 
 }

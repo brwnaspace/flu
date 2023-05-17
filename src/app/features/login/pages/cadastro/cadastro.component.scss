@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'ridley-medium';
+    src: url('/assets/Ridley Grotesk Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'varsity';
+    src: url('/assets/VarsityTeam-Bold.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ridley-light';
+    src: url('/assets/Ridley Grotesk Light.otf ') format('truetype');
+}
+
+// cores
+$grena: #7B001F;
+$grena-hover: #560F20;
+$verde: #004C33;
+$verde-hover: #008000;
+$branco: #FFFFFF;
+
+// font
+$font-text: 'ridley-medium';
+$font-text-light: 'ridley-medium';
+$font-title: 'varsity';
+
+section {
+
+    
+    .wrapper {
+        padding: 13%;
+        font-family: $font-text;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        place-items: center;
+        height: 110vh;
+        // background-image: url(https://pbs.twimg.com/media/EJLJrMxXkAA4Aph.jpg);
+        background-image: url(https://pbs.twimg.com/media/EoaT98sXUAEa_-x?format=jpg&name=large);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 110vh;
+            background-color: #7b001f4f;
+        }
+
+        .login-form {
+            margin: auto;
+            background: rgba(255, 255, 255, 0.175);
+            backdrop-filter: blur(6.5px);
+            -webkit-backdrop-filter: blur(6.5px);
+            box-shadow: 0px 11px 15px -3px rgba(0, 0, 0, 0.415);
+            display: flex;
+            flex-direction: row;
+
+            .login-img {
+                width: 50%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .login {
+                width: 50%;
+                position: relative;
+                padding: 0 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h2 {
+                    font-size: 2rem;
+                    margin: 0;
+                    text-align: center;
+                    font-family: $font-title;
+                    letter-spacing: 1px;
+                    color: $branco;
+                    text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+                    font-weight: bolder;
+                    margin-bottom: 1rem;
+
+                }
+
+                button {
+                    padding: 0.6em 1.2em;
+                    font-family: $font-text;
+                    font-size: 20px;
+                    cursor: pointer;
+                    font-family: $font-text;
+                    text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+                    cursor: pointer;
+                    width: 100%;
+                    border: 2px solid $branco;
+                    background-color: transparent;
+                    color: $branco;
+
+                    &:hover {
+                        background-color: $verde;
+                        border-color: $verde;
+                        transition: 0.3s ease-out;
+                    }
+                }
+
+                label {
+                    display: block;
+                }
+
+
+            }
+
+            input {
+                border: 1px solid #ccc;
+                border-radius: 2px;
+                padding: 10px;
+                margin: 5px;
+                width: 100%;
+
+                &:focus {
+                    outline: none;
+                    border: 2.2px solid $grena-hover;
+                }
+            }
+
+            .register {
+                margin: 15px 0 0 0;
+                padding: 8px 0 0 0;
+                text-align: center;
+                color: $branco;
+                border-top: 1px solid #d0d0d0;
+
+                label {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5%;
+                    gap: 0.625rem;
+
+                    input {
+                        background-color: white;
+                        cursor: pointer;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        -ms-appearance: none;
+                        -o-appearance: none;
+                        border: none;
+                        background-color: #fff;
+                        /* Ajustando o tamanho do checkbox */
+                        transform: scale(0.5);
+                        width: 1px;
+
+                        &:checked {
+                            background-color: $verde;
+                        }
+                    }
+
+                    p {
+                        font-size: 0.7rem;
+                        font-weight: 300;
+                    }
+                }
+
+            }
+
+        }
+    }
+}

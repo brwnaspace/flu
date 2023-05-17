@@ -6,6 +6,7 @@ import { DetailsPageComponent } from './features/home/pages/details-page/details
 import { AuthGuard } from './shared/guards/auth.guard';
 import { OpeningComponent } from './features/opening/pages/opening/opening.component';
 import { TicketsComponent } from './features/tickets/pages/tickets/tickets.component';
+import { CadastroComponent } from './features/login/pages/cadastro/cadastro.component';
 
 const routes: Routes = [
   // {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'opening', component: OpeningComponent, canActivate: [AuthGuard]},
   {path: 'login', component: LoginComponent},
   {path: 'ticket', component: TicketsComponent, canActivate: [AuthGuard]},
-  {path: 'products-details/:id', component: DetailsPageComponent}
+  {path: 'register', component: CadastroComponent}
+  // {path: 'products-details/:id', component: DetailsPageComponent}
 ];
 
 @NgModule({
