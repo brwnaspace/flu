@@ -51,7 +51,7 @@ $font-title: 'varsity';
 
   .login-form {
     margin: auto;
-    background: rgba(255, 255, 255, 0.473);
+    background: rgba(255, 255, 255, 0.175);
     backdrop-filter: blur(6.5px);
     -webkit-backdrop-filter: blur(6.5px);
     box-shadow: 0px 11px 15px -3px rgba(0, 0, 0, 0.415);
@@ -75,14 +75,24 @@ $font-title: 'varsity';
       justify-content: center;
 
       h1 {
-        font-size: 2.8em;
+        font-size: 2.2rem;
         margin: 0;
-        margin-bottom: 30px;
+        
         text-align: center;
         font-family: $font-title;
-        letter-spacing: 8px;
+        letter-spacing: 1px;
         color: $branco;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+        font-weight: bolder;
+
+      }
+
+      small {
+        margin-bottom: 30px;
+        color: $branco;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.451);
+        text-align: center;
+        margin-top: 10px;
       }
 
       button {

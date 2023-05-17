@@ -42,9 +42,11 @@ section {
 
         .info-itens {
 
+            height: 55vh;
+
             &:first-child {
 
-                width: 120%;
+                width: 100%;
 
                 img {
                     width: 100%;
@@ -53,18 +55,17 @@ section {
             }
 
             &:last-child {
-                margin-top: 90px;
                 width: 80%;
 
                 h1 {
-                    font-size: 3rem;
-                    padding: 0 0 20px 0;
+                    font-size: 2.6rem;
+                    padding: 50px 0 20px 0;
                     text-align: left;
                     font-family: $font-title;
                 }
 
                 p {
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                     padding: 0 0 30px 0;
                     width: 70%;
                 }
@@ -89,10 +90,12 @@ section {
     }
 
     .middle {
-        margin-top: 1rem;
-        margin-bottom: 1.875rem;
+        
+        margin-bottom: 3rem;
         padding: 1.25rem;
-        background-color: #cda56ee3;
+        // background-color: #c69c62e3;
+        background: linear-gradient(to right, hsla(35, 49%, 49%, 0.802), #dbc970e5, hsla(35, 49%, 49%, 0.802));
+        // background: linear-gradient(to right, $grena-hover, $grena, $grena-hover);
         text-align: center;
         color: rgb(27, 27, 27);
         color: $branco;

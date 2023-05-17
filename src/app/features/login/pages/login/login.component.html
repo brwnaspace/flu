@@ -8,7 +8,8 @@
         </div>
 
         <div class="login">
-            <h1>LOGIN</h1>
+            <h1>Iniciar sessão</h1>
+            <small>Digite seus dados nos campos abaixo: </small>
             <p class="errorMessage" *ngIf="error">Usuário/senha inválidos, tente novamente</p>
             <div class='row'>
                 <input type="email" [(ngModel)]="email" placeholder="Digite seu e-mail" name="email" required>
