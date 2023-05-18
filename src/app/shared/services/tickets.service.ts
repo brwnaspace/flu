@@ -12,7 +12,7 @@ export class TicketsService {
     {
       campeonato: "CAMPEONATO BRASILEIRO",
       estadio: "Mineirão | Belo Horizonte - MG",
-      dia: "10|05|2023 - 21:30",
+      dia: "28|05|2023 - 21:30",
       clubeUm: "CRU",
       imgUm: "https://s3-sa-east-1.amazonaws.com/sgegeo/images/clubes/img_16.png",
       clubeDois: "FLU",
@@ -21,7 +21,7 @@ export class TicketsService {
     {
       campeonato: "CAMPEONATO BRASILEIRO",
       estadio: "Maracanã | Rio de Janeiro - RJ",
-      dia: "13|05|2023 - 18:30",
+      dia: "31|05|2023 - 18:30",
       clubeUm: "FLU",
       imgUm: "https://s3-sa-east-1.amazonaws.com/sgegeo/images/clubes/img_19.png",
       clubeDois: "CUI",

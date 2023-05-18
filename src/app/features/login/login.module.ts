@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './pages/login/login.component';
 import { SharedModule } from "../../shared/shared.module";
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { RouterModule } from '@angular/router';
 
@@ -21,7 +21,8 @@ import { RouterModule } from '@angular/router';
         CommonModule,
         SharedModule,
         FormsModule,
-        RouterModule
+        RouterModule, 
+        ReactiveFormsModule
     ]
 })
 export class LoginModule { }
