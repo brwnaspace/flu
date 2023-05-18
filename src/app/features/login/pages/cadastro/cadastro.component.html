@@ -3,12 +3,12 @@
 <section>
     <div class='wrapper'>
         <div class="mask"></div>
-        <div class='login-form'>
+        <div class='login-form' [@fadeInOut]>
             <div class="login-img">
                 <img src="https://pbs.twimg.com/media/EbJgbaNWoAEBDQA.jpg">
             </div>
 
-            <div class="login">
+            <div class="login" >
                 <form [formGroup]="userForm" *ngIf="!submitClicked">
                     <h2>Preencha seus dados</h2>
                     <div class="form-group">

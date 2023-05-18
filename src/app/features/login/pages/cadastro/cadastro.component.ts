@@ -2,10 +2,23 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UsersService } from 'src/app/shared/services/users.service';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   templateUrl: './cadastro.component.html',
-  styleUrls: ['./cadastro.component.scss']
+  styleUrls: ['./cadastro.component.scss'],
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('1000ms', style({ opacity: 1 }))
+      ]),
+      transition(':leave', [
+        animate('1000ms', style({ opacity: 0 }))
+      ])
+    ])
+  ]
+  
 })
 export class CadastroComponent {
 

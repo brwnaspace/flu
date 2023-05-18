@@ -6,6 +6,7 @@ import { HomeModule } from './features/home/home.module';
 import { LoginModule } from './features/login/login.module';
 import { OpeningModule } from './features/opening/opening.module';
 import { TicketsModule } from './features/tickets/tickets.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { TicketsModule } from './features/tickets/tickets.module';
     HomeModule,
     LoginModule,
     OpeningModule,
-    TicketsModule
+    TicketsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

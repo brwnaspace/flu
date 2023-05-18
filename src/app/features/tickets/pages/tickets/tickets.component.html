@@ -1,7 +1,7 @@
 <app-header/>
 
 <section>
-    <div class="informations">
+    <div class="informations" [@fadeInOut]>
         <div class="info-itens">
             <img src="https://s3.amazonaws.com/assets-fluminense/uploads%2F1677252332680-WhatsApp+Image+2023-02-24+at+12.21.39.jpeg" alt="">
         </div>
@@ -12,13 +12,13 @@
         </div>
     </div>
 
-    <div class="middle">
+    <div class="middle" [@fadeInOut]>
         <p>Adquira seus ingressos com agilidade, praticidade e segurança.</p>
     </div>
 
-    <h1>INGRESSOS</h1>
+    <h1 [@fadeInOut]>INGRESSOS</h1>
 
-    <div class="cards-wrapper">
+    <div class="cards-wrapper" [@fadeInOut]>
         <div class="card" *ngFor="let ticket of tickets">
             <div class="texts">
                 <h3>{{ticket.campeonato}}</h3>

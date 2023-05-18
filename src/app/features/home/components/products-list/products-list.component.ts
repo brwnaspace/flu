@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 import { Plano } from '../../models/product.module';
 import { ProductService } from 'src/app/shared/services/product.service';
 import { Router, RouterLink } from '@angular/router';
+import { trigger, transition, style, animate } from '@angular/animations';
+
 
 @Component({
   selector: 'app-products-list',
   templateUrl: './products-list.component.html',
-  styleUrls: ['./products-list.component.scss']
+  styleUrls: ['./products-list.component.scss'],
+ 
 })
 export class ProductsListComponent {
 
