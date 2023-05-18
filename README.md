@@ -21,6 +21,20 @@ O sócio-torcedor é um programa oferecido por clubes esportivos, como o [Flumin
 
 Esta aplicação permite que os torcedores do Fluminense se tornem sócios-torcedores através do site reformulado. Os usuários podem explorar as diferentes opções de associação, realizar o cadastro e desfrutar dos benefícios exclusivos oferecidos aos sócios-torcedores. A estilização da aplicação reduzida a apenas alguns dispositivos móveis, como notebook e tablets.
 
+## 👤 Login para visitante:
+
+#### E-mail:
+
+```sh
+visitante@gmail.com
+```
+
+#### Senha:
+
+```sh
+123456mjv
+```
+
 ## Clone este repositório através do GIT:
 
 ```sh
