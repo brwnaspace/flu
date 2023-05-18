@@ -2,15 +2,22 @@
 
 ## 📌 Sobre o Projeto
 
-Projeto final para a `school de Angular` da `MJV`. A aplicação foi criada com o intuito de reformular o site onde os torcedores do clube Fluminense, possam se tornar sócio-torcedores. No projeto, foi utilizado o framework Angular, onde fora difundidos conceitos importantes abordados durante o curso tais como `interpolação, pipes, services, componentes etc`. Ressalto também, que a linguagem utilizada em sua produção foi o [TypeScript](https://www.typescriptlang.org/)
+
+Projeto final da `School de Angular da MJV` que visa a reformulação do site do Fluminense, oferecendo aos torcedores a oportunidade de se tornarem sócios do clube. A aplicação foi desenvolvida utilizando o framework Angular e incorporando conceitos fundamentais abordados durante o curso, como `interpolação, pipes, services, componentes etc`. Ressalto que a implementação foi realizada em [TypeScript](https://www.typescriptlang.org/).
 
 <hr>
 
 ## 🤝 O que é sócio-torcedor?
 
-O sócio-torcedor é um programa oferecido por clubes esportivos, como o [Fluminense](https://www.fluminense.com.br/site/), que permite aos fãs se associarem ao clube e desfrutarem de uma série de benefícios exclusivos. Ao se tornar um sócio-torcedor do Fluminense, os adeptos têm acesso a vantagens como descontos em ingressos para jogos, prioridade na compra de ingressos em eventos especiais, participação em promoções exclusivas, acesso a produtos oficiais do clube com preços diferenciados, entre outros. Além disso, os sócios-torcedores têm a oportunidade de apoiar financeiramente o clube, contribuindo para o seu crescimento e fortalecendo o vínculo entre a torcida e a equipe.
+O sócio-torcedor é um programa oferecido por clubes esportivos, como o [Fluminense](https://www.fluminense.com.br/site/), que permite aos fãs se associarem ao clube e desfrutarem de uma série de benefícios exclusivos. Ao se tornar um sócio, os torcedores têm acesso a vantagens como descontos em ingressos para jogos, prioridade na compra de ingressos em eventos especiais, participação em promoções exclusivas, acesso a produtos oficiais do clube com preços diferenciados, entre outros. Além disso, os sócios-torcedores têm a oportunidade de apoiar financeiramente o clube, contribuindo para o seu crescimento e fortalecendo o vínculo entre a torcida e a equipe.
+
+<br>
 
 ![image](https://github.com/brwnaspace/flu/assets/112510971/6dd31cfc-5bab-4e98-bfb6-787b6c5f334b)
+
+### Uso:
+
+Esta aplicação permite que os torcedores do Fluminense se tornem sócios-torcedores através do site reformulado. Os usuários podem explorar as diferentes opções de associação, realizar o cadastro e desfrutar dos benefícios exclusivos oferecidos aos sócios-torcedores.
 
 ## Clone este repositório através do GIT:
 
@@ -32,6 +39,15 @@ npm install
 ng serve -o
 ```
 
+### 💪 Contribuição:
+#### Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga as diretrizes abaixo:
+
+* Crie um issue descrevendo sua proposta de alteração ou correção.
+* Faça um fork deste repositório e crie um branch para sua contribuição.
+* Realize as alterações necessárias em seu branch.
+* Certifique-se de seguir as boas práticas de código estabelecidas.
+* Envie uma solicitação de pull com suas alterações, referenciando o issue correspondente.
+
 ## 📌 Ferramentas utilizadas:
 
 <div style="display: inline_block" align = "left"><br>
@@ -43,27 +59,3 @@ ng serve -o
   <img align="center" alt="Bruna VsCode " height="40" width="40" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png" />
   <img align="center" alt="Bruna TypeScritp " height="40" width="40" src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" />
   </div>
-<br>
-<br>
-<br>
-
-
-
-#### em construção 
-
-# 🎲 Cada uma das operações do CRUD
-<ul>
-    <li>✍️ Create (Criar): refere-se à ação de adicionar novos dados ao sistema. Por exemplo, criar um novo registro em
-        uma tabela de um banco de dados.
-    </li>
-    <li>📑 Read (Ler): refere-se à ação de ler ou recuperar dados existentes do sistema. Por exemplo, ler e exibir as
-        informações de um registro específico de uma tabela.
-    </li>
-    <li>📝 Update (Atualizar): refere-se à ação de modificar os dados existentes no sistema. Por exemplo, atualizar o
-        valor de um campo em um registro de uma tabela.</li>
-    <li>🗑 Delete (Deletar): refere-se à ação de remover dados existentes do sistema. Por exemplo, excluir um registro
-        específico de uma tabela.</li>
-</ul>
-<hr>
-
-<hr>
