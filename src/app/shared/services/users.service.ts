@@ -18,6 +18,12 @@ export class UsersService {
       name: "brenda",
       email: "brendalima@gmail.com",
       password: "123456brenda"
+    },
+    {
+      id: 3,
+      name: "visitante",
+      email: "visitante@gmail.com",
+      password: "123456mjv"
     }
   ]
 
