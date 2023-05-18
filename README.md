@@ -13,7 +13,9 @@ O sócio-torcedor é um programa oferecido por clubes esportivos, como o [Flumin
 
 <br>
 
-![image](https://github.com/brwnaspace/flu/assets/112510971/6dd31cfc-5bab-4e98-bfb6-787b6c5f334b)
+<p align="center">
+    <img src="https://github.com/brwnaspace/flu/blob/master/src/assets/gif.gif?raw=true" alt="Descrição do GIF">
+</p>
 
 ### Uso:
 
